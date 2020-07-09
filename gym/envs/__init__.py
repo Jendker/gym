@@ -315,6 +315,13 @@ register(
 )
 
 register(
+    id='Ant_target-v0',
+    entry_point='gym.envs.mujoco.ant_target:AntRewardEnv',
+    max_episode_steps=400,
+    reward_threshold=6000.0,
+)
+
+register(
     id='Humanoid-v2',
     entry_point='gym.envs.mujoco:HumanoidEnv',
     max_episode_steps=1000,
